@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.env.local
+
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
