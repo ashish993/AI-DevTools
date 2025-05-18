@@ -21,3 +21,7 @@ nltk>=3.9.1
 psutil>=6.1.0
 pydantic>=2.9.2
 ruamel-yaml>=0.18.10
+PyPDF2==3.0.1
+python-docx==1.0.1
+pandas==2.2.0
+openpyxl==3.1.2  # For Excel file support

@@ -2,17 +2,58 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Environment
 .env
 .venv
+env/
 venv/
 ENV/
+*.env
+.env.*
+
+# Secrets and keys
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+.streamlit/
+.streamlit/secrets.toml
+temp_key.pem
+**/secrets.*
+**/secret.*
+**/*secret*
+**/*password*
+**/*credential*
+**/*token*
+**/.auth.*
+**/*.keystore
+**/*.jks
+
+# API Keys and Configurations
+**/*.config.js
+**/*.config.json
+**/*config.yaml
+**/*config.yml
+**/*.ini
+
+# Temporary files
+
+*.tar.gz
+*.log
+*.tmp
 
 # IDE
-.vscode/
 .idea/
+.vscode/
+*.swp
+*.swo
 
 # Misc
 .DS_Store
+Thumbs.db
 
 
 

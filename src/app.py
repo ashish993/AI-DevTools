@@ -22,6 +22,7 @@ from metamorph import render_code_transformation
 from diagramgptemb import execute_diagram_code, generate_diagram_prompt, clean_and_fix_code
 from securityaudit import render_security_audit
 from githubrepo import render_repository_analysis
+from rfp_solver import render_rfp_solver
 
 # Add custom CSS after page config
 add_custom_css()
@@ -34,6 +35,13 @@ tools = {
         "description": "Design scalable architectures using Alibaba Cloud services with detailed analysis",
         "prompt": "Please describe your business requirements or problem statement. I'll help design a solution using Alibaba Cloud services with detailed technical analysis."
     },
+     "rfpMaster": {
+        "icon": "envelope",
+        "title": "RFPMaster - Intelligent RFP Response Generator",
+        "description": "Generate professional RFP responses from internal documents",
+        "prompt": "Upload your internal document and RFP questions to generate accurate responses."
+    },
+   
     "diagramGPT": {
         "icon": "art",
         "title": "DiagramGPT - Architecture Visualizer",
@@ -76,8 +84,7 @@ tools = {
         "title": "LogicLens - Git Logic Solver",
         "description": "Enterprise-level analysis of GitHub repositories including code quality, security, architecture, and best practices",
         "prompt": "Enter the GitHub repository URL (e.g., https://github.com/username/repo) for a comprehensive analysis of code quality, security, architecture, and best practices."
-    }
-    
+    } 
 }
 
 def process_llm_response(response_stream):
@@ -231,8 +238,9 @@ def main():
     st.title(f"{tool['title']} 🔧")
     st.markdown(f"_{tool['description']}_")
     
-    # User input area
-    if st.session_state.selected_tool != "metamorph":
+    if st.session_state.selected_tool == "rfpMaster":
+        render_rfp_solver()
+    elif st.session_state.selected_tool != "metamorph":
         user_input = st.text_area(
             "Your Request",
             value="",

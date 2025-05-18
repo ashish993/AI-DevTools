@@ -1,6 +1,8 @@
 # AI DevTools 🛠️
 
-An intelligent developer toolkit that provides various AI-powered features to assist in software development, architecture design, and code analysis.
+An intelligent developer toolkit that provides various AI-powered features to assist in software development, architecture design, code analysis, and RFP solutions.
+
+## LIVE DEMO: http://47.254.240.28:8501/
 
 ## Features
 
@@ -43,6 +45,13 @@ An intelligent developer toolkit that provides various AI-powered features to as
 - Enterprise-level repository analysis
 - Code quality assessment
 - Security and architecture evaluation
+
+### 9. 📋 RFP Solver - Document Analysis
+- Analyze and process RFP documents
+- Extract key requirements and specifications
+- Generate comprehensive responses
+- Use Sample-Template-Document.pdf for trying the internal document analysis feature
+- Use questions.xlsx for sample security assessment questions
 
 ## Prerequisites
 
@@ -102,9 +111,12 @@ streamlit run src/app.py
 │   ├── githubrepo.py       # Repository analysis module
 │   ├── logic_lens.py       # Code analysis module
 │   ├── metamorph.py        # Code transformation module
+│   ├── rfp_solver.py       # RFP document analysis module
 │   └── securityaudit.py    # Security analysis module
 ├── static/                  # Static assets
 ├── templates/              # HTML templates
+├── Sample-Template-Document.pdf  # Sample RFP document for testing
+├── questions.xlsx          # Security assessment questions
 ├── requirements.txt        # Python dependencies
 └── Dockerfile             # Container definition
 ```
@@ -126,7 +138,17 @@ streamlit run src/app.py
    - Input your requirements
    - Get optimized code output
 
-4. **Code Analysis**:
+4. **RFP Analysis**:
+   - Choose RFP Solver
+   - Upload Sample-Template-Document.pdf or your own RFP document
+   - Get detailed analysis and requirement extraction
+
+5. **Security Assessment**:
+   - Select Security Auditor
+   - Use provided questions.xlsx for assessment framework
+   - Get comprehensive security analysis
+
+6. **Code Analysis**:
    - Use LogicLens
    - Enter a GitHub repository URL
    - Receive comprehensive analysis
@@ -169,6 +191,8 @@ Additional Docker run options:
 - Keep your API keys secure and never commit them to version control
 - Always review generated code before using in production
 - Follow security best practices when deploying
+- Use the provided questions.xlsx as a baseline for security assessments
+- Regularly update your security assessment criteria
 
 ## Contributing
 
