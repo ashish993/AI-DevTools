@@ -2,6 +2,8 @@
 
 An intelligent developer toolkit that provides various AI-powered features to assist in software development, architecture design, and code analysis.
 
+## LIVE DEMO: http://47.254.240.28:8501/
+
 ## Features
 
 ### 1. 🏛️ ArchMaster - Architecture Designer
