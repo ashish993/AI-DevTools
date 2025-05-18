@@ -2,10 +2,6 @@
 
 An intelligent developer toolkit that provides various AI-powered features to assist in software development, architecture design, code analysis, and RFP solutions.
 
-## LIVE DEMO: http://47.254.240.28:8501/
-
-## LIVE DEMO: http://47.254.240.28:8501/
-
 ## Features
 
 ### 1. 🏛️ ArchMaster - Architecture Designer
@@ -59,7 +55,7 @@ An intelligent developer toolkit that provides various AI-powered features to as
 
 - Python 3.8 or higher
 - Graphviz (for diagram generation)
-- DashScope API Key (for LLM integration)
+- QWEN API Key (for LLM integration)
 
 ## Installation
 
