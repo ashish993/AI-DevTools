@@ -21,7 +21,6 @@ ENV/
 *.p12
 .streamlit/
 .streamlit/secrets.toml
-temp_key.pem
 **/secrets.*
 **/secret.*
 **/*secret*
@@ -40,7 +39,6 @@ temp_key.pem
 **/*.ini
 
 # Temporary files
-
 *.tar.gz
 *.log
 *.tmp
